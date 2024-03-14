@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="RegisterPane" prefHeight="574.0" prefWidth="860.0" style="-fx-background-color: C1A2FF45; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.BookBar.controller.DashboardFormController">
+   <children>
+      <AnchorPane layoutX="246.0" layoutY="19.0" prefHeight="50.0" prefWidth="229.0" style="-fx-background-color: #47FF0030#47FF0030; -fx-background-radius: 20;">
+         <children>
+            <Label layoutX="12.0" layoutY="27.0" text="Time :">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="13.0" layoutY="4.0" text="Date :">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate" layoutX="72.0" layoutY="4.0" prefHeight="16.0" prefWidth="142.0">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTime" layoutX="72.0" layoutY="28.0" prefHeight="16.0" prefWidth="142.0">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="mainNode" layoutX="246.0" layoutY="93.0" prefHeight="797.0" prefWidth="1031.0" style="-fx-background-radius: 20; -fx-background-color: WHITE;" styleClass="btnRoot" stylesheets="@../../../../StichCraft/src/main/resources/style/drop_shadow.css">
+         <children>
+            <AnchorPane layoutX="39.0" layoutY="104.0" prefHeight="103.0" prefWidth="229.0" style="-fx-background-color: C1A2FF45; -fx-background-radius: 20;">
+               <children>
+                  <ImageView fitHeight="67.0" fitWidth="69.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icon/icons8-customer-100.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="73.0" layoutY="9.0" text="Total Members !">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblTotalMembers" alignment="CENTER" layoutX="97.0" layoutY="52.0" prefHeight="16.0" prefWidth="118.0" textAlignment="RIGHT" wrapText="true">
+                     <font>
+                        <Font name="System Bold Italic" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="398.0" layoutY="243.0" prefHeight="103.0" prefWidth="229.0" style="-fx-background-color: C1A2FF45; -fx-background-radius: 20;">
+               <children>
+                  <ImageView fitHeight="56.0" fitWidth="67.0" layoutX="9.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icon/icons8-overdue-100.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="75.0" layoutY="8.0" text="Overdue Books !">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblTotalOrders" alignment="CENTER" layoutX="95.0" layoutY="49.0" prefHeight="16.0" prefWidth="118.0" textAlignment="RIGHT" wrapText="true">
+                     <font>
+                        <Font name="System Bold Italic" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Line endX="930.0" layoutX="100.0" layoutY="75.0" startX="-100.0" />
+            <Label layoutX="39.0" layoutY="14.0" text="DASHBOARD">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="40.0" layoutY="44.0" text="Here's your analytic details...">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="39.0" layoutY="243.0" prefHeight="103.0" prefWidth="229.0" style="-fx-background-color: C1A2FF45; -fx-background-radius: 20;">
+               <children>
+                  <ImageView fitHeight="67.0" fitWidth="70.0" layoutX="7.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icon/icons8-books-100 (1).png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="73.0" layoutY="9.0" text="Borrowed books !">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblTodayOrders" alignment="CENTER" layoutX="84.0" layoutY="50.0" prefHeight="16.0" prefWidth="118.0" textAlignment="RIGHT" wrapText="true">
+                     <font>
+                        <Font name="System Bold Italic" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="298.0" fitWidth="330.0" layoutX="25.0" layoutY="482.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icon/_Tecnica Library_ Modular Shelving Bookcase by Jaume Tresserra for Dessie'.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="310.0" fitWidth="253.0" layoutX="409.0" layoutY="455.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icon/OLD%20BOOKS%20SKELETON%20KEYS%20las%20llaves%20de%20tu%20vida.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="298.0" fitWidth="330.0" layoutX="671.0" layoutY="479.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icon/_Tecnica%20Library_%20Modular%20Shelving%20Bookcase%20by%20Jaume%20Tresserra%20for%20Dessie'.jpeg" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="398.0" layoutY="104.0" prefHeight="103.0" prefWidth="229.0" style="-fx-background-color: C1A2FF45; -fx-background-radius: 20;">
+               <children>
+                  <ImageView fitHeight="67.0" fitWidth="69.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icon/icons8-books-100.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="73.0" layoutY="9.0" text="Total Books !">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblTotalBooks" alignment="CENTER" layoutX="93.0" layoutY="51.0" prefHeight="16.0" prefWidth="118.0" textAlignment="RIGHT" wrapText="true">
+                     <font>
+                        <Font name="System Bold Italic" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Label layoutX="719.0" layoutY="60.0" text="BookBar">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="1048.0" layoutY="19.0" prefHeight="50.0" prefWidth="229.0" style="-fx-background-color: #47FF0030#47FF0030; -fx-background-radius: 20;">
+         <children>
+            <ImageView fitHeight="44.0" fitWidth="48.0" layoutX="171.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icon/icons8-user-100.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="37.0" layoutY="17.0" text="Hey GIMSHAN">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="20.0" layoutY="20.0" prefHeight="871.0" prefWidth="200.0" style="-fx-background-color: #47FF0030#47FF0030; -fx-background-radius: 20;">
+         <children>
+            <Label layoutX="54.0" layoutY="103.0" prefHeight="25.0" prefWidth="103.0" text="BookBar">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="115.0" fitWidth="126.0" layoutX="45.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icon/Education_logo_open_book_dictionary_vector_image_on_VectorStock-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <ImageView fitHeight="74.0" fitWidth="118.0" layoutX="726.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon/Education_logo_open_book_dictionary_vector_image_on_VectorStock-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="33.0" layoutY="309.0" onAction="#btnDashboardOnAction" prefHeight="33.0" prefWidth="172.0" ripplerFill="BLACK" style="-fx-background-color: white; -fx-background-radius: 20;" text="DASHBOARD">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="33.0" layoutY="369.0" onAction="#btnTransactionOnAction" prefHeight="33.0" prefWidth="172.0" style="-fx-background-color: white; -fx-background-radius: 20;" text="TRANSACTION">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="35.0" layoutY="431.0" onAction="#btnBooksOnAction" prefHeight="33.0" prefWidth="172.0" style="-fx-background-color: white; -fx-background-radius: 20;" text="BOOKS">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="35.0" layoutY="498.0" onAction="#btnMembersOnAction" prefHeight="33.0" prefWidth="172.0" style="-fx-background-color: white; -fx-background-radius: 20;" text="MEMBERS">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="35.0" layoutY="564.0" onAction="#btnBranchesOnAction" prefHeight="33.0" prefWidth="172.0" style="-fx-background-color: white; -fx-background-radius: 20;" text="BRANCHES">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>
