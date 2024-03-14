@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+
+<AnchorPane fx:id="memberID" prefHeight="797.0" prefWidth="1031.0" style="-fx-background-color: white; -fx-background-radius: 20;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.BookBar.controller.MemberFormController">
+   <children>
+      <Line endX="930.0" layoutX="99.0" layoutY="85.0" startX="-100.0" />
+   </children>
+</AnchorPane>

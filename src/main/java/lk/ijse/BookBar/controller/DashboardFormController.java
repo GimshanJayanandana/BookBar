@@ -2,8 +2,11 @@ package lk.ijse.BookBar.controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
+
+import java.io.IOException;
 
 public class DashboardFormController {
 
@@ -37,17 +40,25 @@ public class DashboardFormController {
     }
 
     @FXML
-    void btnBranchesOnAction(ActionEvent event) {
+    void btnBranchesOnAction(ActionEvent event) throws IOException {
 
     }
 
     @FXML
-    void btnDashboardOnAction(ActionEvent event) {
+    void btnDashboardOnAction(ActionEvent event) throws IOException {
+        AnchorPane anchorPane = FXMLLoader.load(this.getClass().getResource("/DashboardForm.fxml"));
+        this.RegisterPane.getChildren().clear();
+        this.RegisterPane.getChildren().add(anchorPane);
 
     }
 
     @FXML
-    void btnMembersOnAction(ActionEvent event) {
+    void btnMembersOnAction(ActionEvent event) throws IOException {
+        AnchorPane anchorPane = FXMLLoader.load(this.getClass().getResource("/member_Form.fxml"));
+        this.mainNode.getChildren().clear();
+        this.mainNode.getChildren().add(anchorPane);;
+
+
 
     }
 

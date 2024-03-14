@@ -4,13 +4,18 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import lk.ijse.BookBar.bo.BOFactory;
+import lk.ijse.BookBar.bo.custom.UserBO;
+import lk.ijse.BookBar.dto.UserDto;
 
 import java.io.IOException;
+import java.sql.SQLException;
 
 public class RegistrationFormController {
 
@@ -18,14 +23,15 @@ public class RegistrationFormController {
     private AnchorPane RegisterPane;
 
     @FXML
-    private PasswordField txtNewPasswordId;
+    private TextField txtEmailId;
 
     @FXML
-    private PasswordField txtPasswordId;
+    private PasswordField txtPassword;
 
     @FXML
     private TextField txtUserName;
 
+    UserBO userBO = (UserBO) BOFactory.getBoFactory().grtBo(BOFactory.BOTypes.USER);
     @FXML
     void btnBackOnAction(MouseEvent event) throws IOException {
 
@@ -41,6 +47,19 @@ public class RegistrationFormController {
     @FXML
     void btnRegisterOnAction(ActionEvent event) {
 
+        String name = txtUserName.getText();
+        String email = txtEmailId.getText();
+        String password = txtPassword.getText();
+
+        try {
+            boolean isSaved = userBO.saveUser(new UserDto(name,email,password));
+            if (isSaved) {
+                new Alert(Alert.AlertType.CONFIRMATION,"Saved").show();
+            }
+        } catch (SQLException e) {
+            new Alert(Alert.AlertType.ERROR,e.getMessage()).show();
+        }
+
     }
 
     @FXML
@@ -55,6 +74,14 @@ public class RegistrationFormController {
 
     @FXML
     void txtRegisterOnAction(ActionEvent event) {
+
+    }
+    @FXML
+    void txtGoToEmailOnAction(ActionEvent event) {
+
+    }
+    @FXML
+    void txtPasswordOnAction(ActionEvent event) {
 
     }
 }
