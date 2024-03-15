@@ -49,7 +49,7 @@
             <Font name="System Bold" size="14.0" />
          </font>
       </TextField>
-      <TextField fx:id="txtMemberContact" alignment="CENTER" layoutX="748.0" layoutY="205.0" onAction="#txtContactGoToAddressOnAction" prefHeight="44.0" prefWidth="226.0" promptText="Branch Manager" style="-fx-background-radius: 10;">
+      <TextField fx:id="txtBranchManager" alignment="CENTER" layoutX="748.0" layoutY="205.0" onAction="#txtManagerGoToAddressOnAction" prefHeight="44.0" prefWidth="226.0" promptText="Branch Manager" style="-fx-background-radius: 10;">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>

@@ -1,4 +1,4 @@
-package lk.ijse.BookBar.dao.impl;
+package lk.ijse.BookBar.dao.custom.impl;
 
 import lk.ijse.BookBar.config.FactoryConfiguration;
 import lk.ijse.BookBar.dao.custom.UserDAO;
@@ -61,6 +61,11 @@ public class UserDAOimpl implements UserDAO {
 
     @Override
     public List<User> getAll() throws SQLException, ClassNotFoundException {
+        return null;
+    }
+
+    @Override
+    public String generateNextID() {
         return null;
     }
 }

@@ -1,4 +1,4 @@
-package lk.ijse.BookBar.bo.impl;
+package lk.ijse.BookBar.bo.custom.impl;
 
 import lk.ijse.BookBar.bo.custom.UserBO;
 import lk.ijse.BookBar.dao.DAOFactory;

@@ -1,6 +1,7 @@
 package lk.ijse.BookBar.bo;
 
-import lk.ijse.BookBar.bo.impl.UserBOimpl;
+import lk.ijse.BookBar.bo.custom.impl.BranchesBOimpl;
+import lk.ijse.BookBar.bo.custom.impl.UserBOimpl;
 
 public class BOFactory {
 
@@ -13,13 +14,15 @@ public class BOFactory {
     }
 
     public enum BOTypes {
-        USER
+        USER,BRANCHES
     }
 
     public SuperBO grtBo(BOTypes boTypes) {
         switch (boTypes) {
             case USER:
                 return new UserBOimpl();
+            case BRANCHES:
+                return new BranchesBOimpl();
             default:
                 return null;
         }

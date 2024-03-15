@@ -10,7 +10,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import lk.ijse.BookBar.dao.custom.UserDAO;
-import lk.ijse.BookBar.dao.impl.UserDAOimpl;
+import lk.ijse.BookBar.dao.custom.impl.UserDAOimpl;
 
 import java.io.IOException;
 
