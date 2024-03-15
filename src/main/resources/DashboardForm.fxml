@@ -9,7 +9,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="RegisterPane" prefHeight="574.0" prefWidth="860.0" style="-fx-background-color: C1A2FF45; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.BookBar.controller.DashboardFormController">
+<AnchorPane fx:id="RegisterPane" prefHeight="911.0" prefWidth="1296.0" style="-fx-background-color: C1A2FF45; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.BookBar.controller.DashboardFormController">
    <children>
       <AnchorPane layoutX="246.0" layoutY="19.0" prefHeight="50.0" prefWidth="229.0" style="-fx-background-color: #47FF0030#47FF0030; -fx-background-radius: 20;">
          <children>
@@ -86,7 +86,7 @@
                   <Font size="14.0" />
                </font>
             </Label>
-            <AnchorPane layoutX="39.0" layoutY="243.0" prefHeight="103.0" prefWidth="229.0" style="-fx-background-color: C1A2FF45; -fx-background-radius: 20;">
+            <AnchorPane layoutX="39.0" layoutY="243.0" onMouseClicked="#imgBackOnAction" prefHeight="103.0" prefWidth="229.0" style="-fx-background-color: C1A2FF45; -fx-background-radius: 20;">
                <children>
                   <ImageView fitHeight="67.0" fitWidth="70.0" layoutX="7.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -170,6 +170,11 @@
             <ImageView fitHeight="115.0" fitWidth="126.0" layoutX="45.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@icon/Education_logo_open_book_dictionary_vector_image_on_VectorStock-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="44.0" fitWidth="46.0" layoutX="77.0" layoutY="813.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icon/icons8-back-button-100.png" />
                </image>
             </ImageView>
          </children></AnchorPane>

@@ -3,8 +3,11 @@ package lk.ijse.BookBar.controller;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 
 import java.io.IOException;
 
@@ -35,12 +38,17 @@ public class DashboardFormController {
     private AnchorPane mainNode;
 
     @FXML
-    void btnBooksOnAction(ActionEvent event) {
-
+    void btnBooksOnAction(ActionEvent event) throws IOException {
+        AnchorPane anchorPane = FXMLLoader.load(this.getClass().getResource("/books_form.fxml"));
+        this.mainNode.getChildren().clear();
+        this.mainNode.getChildren().add(anchorPane);
     }
 
     @FXML
     void btnBranchesOnAction(ActionEvent event) throws IOException {
+        AnchorPane anchorPane = FXMLLoader.load(this.getClass().getResource("/branches_form.fxml"));
+        this.mainNode.getChildren().clear();
+        this.mainNode.getChildren().add(anchorPane);
 
     }
 
@@ -56,14 +64,28 @@ public class DashboardFormController {
     void btnMembersOnAction(ActionEvent event) throws IOException {
         AnchorPane anchorPane = FXMLLoader.load(this.getClass().getResource("/member_Form.fxml"));
         this.mainNode.getChildren().clear();
-        this.mainNode.getChildren().add(anchorPane);;
+        this.mainNode.getChildren().add(anchorPane);
 
 
 
     }
 
     @FXML
-    void btnTransactionOnAction(ActionEvent event) {
+    void btnTransactionOnAction(ActionEvent event) throws IOException {
+        AnchorPane anchorPane = FXMLLoader.load(this.getClass().getResource("/transaction_form.fxml"));
+        this.mainNode.getChildren().clear();
+        this.mainNode.getChildren().add(anchorPane);
+
+
+    }
+    @FXML
+    void imgBackOnAction(MouseEvent event) throws IOException {
+        mainNode.getScene().getWindow().hide();
+        Stage stage = new Stage();
+        stage.setScene(new Scene(FXMLLoader.load(this.getClass().getResource("/loginForm.fxml"))));
+        stage.centerOnScreen();
+        stage.setTitle("LoginForm");
+        stage.show();
 
     }
 
