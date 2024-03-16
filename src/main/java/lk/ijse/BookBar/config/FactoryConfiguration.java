@@ -1,5 +1,6 @@
 package lk.ijse.BookBar.config;
 
+import lk.ijse.BookBar.entity.Books;
 import lk.ijse.BookBar.entity.Branches;
 import lk.ijse.BookBar.entity.Members;
 import lk.ijse.BookBar.entity.User;
@@ -13,7 +14,7 @@ public class FactoryConfiguration {
 
     private FactoryConfiguration() {
         Configuration configuration = new Configuration().configure().addAnnotatedClass(User.class).
-                addAnnotatedClass(Branches.class).addAnnotatedClass(Members.class);
+                addAnnotatedClass(Branches.class).addAnnotatedClass(Members.class).addAnnotatedClass(Books.class);
         sessionFactory = configuration.buildSessionFactory();
     }
 
