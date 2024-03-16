@@ -1,7 +1,5 @@
-package lk.ijse.BookBar.entity;
+package lk.ijse.BookBar.dto;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -9,14 +7,10 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-@Entity
-public class Members {
-
-    @Id
+public class MemberDto {
     private String id;
     private String name;
     private String phoneNumber;
     private String email;
     private String address;
-
 }

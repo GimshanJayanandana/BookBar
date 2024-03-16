@@ -1,6 +1,7 @@
 package lk.ijse.BookBar.config;
 
 import lk.ijse.BookBar.entity.Branches;
+import lk.ijse.BookBar.entity.Members;
 import lk.ijse.BookBar.entity.User;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -12,7 +13,7 @@ public class FactoryConfiguration {
 
     private FactoryConfiguration() {
         Configuration configuration = new Configuration().configure().addAnnotatedClass(User.class).
-                addAnnotatedClass(Branches.class);
+                addAnnotatedClass(Branches.class).addAnnotatedClass(Members.class);
         sessionFactory = configuration.buildSessionFactory();
     }
 
